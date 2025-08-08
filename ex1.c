@@ -8,29 +8,29 @@ int main(){
     
     for (i=1;i<=max_times;i++)
     { 
-      printf("\nTime %d", i);
-    
-      for (j=1; j <= max_jog; j++){ 
-      
-	printf("\nIdade do jogador %d: ", j);
-        scanf("%d", &idade);
-        
-	  if (idade < 18)
-	  { menor_idade+=1; 
-	    soma+=idade;  
-	  }
-	  else{
-	    soma+=idade; 
-	  }
-	  printf("\nAltura do jogador %d do time %d: ",j, i);
-	  scanf("%f", &altura);
-	  soma_altura+=altura; 
-	  
-	  printf("\nPeso do jogador %d: ", j);
-	  scanf("%f", &peso);
-	  if(peso>80)
-	      peso_80+=1;
-      }
+	      printf("\nTime %d", i);
+	    
+	      for (j=1; j <= max_jog; j++){ 
+	      
+		printf("\nIdade do jogador %d: ", j);
+	    scanf("%d", &idade);
+	        
+		  if (idade < 18)
+		  { menor_idade+=1; 
+		    soma+=idade;  
+		  }
+		  else{
+		    soma+=idade; 
+		  }
+		  printf("\nAltura do jogador %d do time %d: ",j, i);
+		  scanf("%f", &altura);
+		  soma_altura+=altura; 
+		  
+		  printf("\nPeso do jogador %d: ", j);
+		  scanf("%f", &peso);
+		  if(peso>80)
+		      peso_80+=1;
+    }
       
       printf("\nJogadores com menos de 18 do time %d: %d",i, menor_idade);
       media_idade = soma/ max_jog;
